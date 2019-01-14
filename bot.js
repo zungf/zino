@@ -37,8 +37,8 @@ if (message.content.startsWith(prefix + 'p')) {
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
 
-if (message.content.startsWith(prefix + 'w')) {
-client.user.setActivity(argresult, {type:'WATCHING'});
+if (message.content.startsWith(prefix + 'f')) {
+client.user.setActivity(argresult, {type:'FUCK'});
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
 if (message.content.startsWith(prefix + 'l')) {
