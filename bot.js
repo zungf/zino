@@ -45,7 +45,10 @@ if (message.content.startsWith(prefix + 'l')) {
 client.user.setActivity(argresult, {type:'LISTENING'});
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
-
+if (message.content.startsWith(prefix + 'avatar')) {
+client.user.setAvatar(argresult);
+  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+      } else
 if (message.content.startsWith(prefix + 's')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Justin-Ly0001");
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
